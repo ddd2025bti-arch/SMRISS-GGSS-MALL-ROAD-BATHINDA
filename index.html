@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
@@ -20,61 +20,61 @@
       background: #ffffff;
       min-height: 100vh;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
     }
     .header-banner {
       background: linear-gradient(135deg, #0d47a1, #1976d2);
       color: white;
-      padding: 20px 15px;
+      padding: 15px;
       text-align: center;
     }
     .header-banner h1 {
-      font-size: 18px;
-      margin: 0 0 5px 0;
+      font-size: 16px;
+      margin: 0 0 4px 0;
     }
     .header-banner p {
-      font-size: 12px;
+      font-size: 11px;
       margin: 0;
       opacity: 0.9;
     }
-    .stitch-link-bar {
-      background: #e8f0fe;
-      padding: 10px 15px;
-      text-align: center;
-      border-bottom: 1px solid #d2e3fc;
+    /* WIREFRAME FRAME ON TOP */
+    .wireframe-box {
+      width: 100%;
+      height: 480px;
+      border-bottom: 2px solid #e0e0e0;
+      background: #fafafa;
     }
-    .stitch-btn {
-      display: inline-block;
-      background: #1a73e8;
-      color: white;
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 13px;
-      font-weight: 600;
+    .wireframe-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
+    /* BUTTONS SECTION AT BOTTOM */
     .grid-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 10px;
       padding: 15px;
+      background: #ffffff;
     }
     .btn-card {
       background: #ffffff;
       border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      padding: 15px;
+      border-radius: 10px;
+      padding: 12px 8px;
       text-align: center;
       text-decoration: none;
       color: #333;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
     .btn-card .icon {
-      font-size: 24px;
+      font-size: 22px;
       display: block;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
     }
     .btn-card .title {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       color: #1a73e8;
     }
@@ -83,19 +83,19 @@
 <body>
 
   <div class="app-container">
+    
+    <!-- HEADER -->
     <div class="header-banner">
       <h1>SHAHEED MAJOR R.S. SANDHU</h1>
       <p>Govt. Smart School • Mall Road, Bathinda</p>
     </div>
 
-    <!-- GOOGLE STITCH DIRECT LINK -->
-    <div class="stitch-link-bar">
-      <a href="https://stitch.withgoogle.com/preview/17478538286794595047?node-id=335177f62cb64654a08262e6c84ec24e" target="_blank" class="stitch-btn">
-        🎨 Open Google Stitch Wireframe
-      </a>
+    <!-- 1. STITCH WIREFRAME (PEHLE WIREFRAME AAYEGA) -->
+    <div class="wireframe-box">
+      <iframe src="https://stitch.withgoogle.com/preview/17478538286794595047?node-id=335177f62cb64654a08262e6c84ec24e"></iframe>
     </div>
 
-    <!-- MAIN APP BUTTONS -->
+    <!-- 2. APP BUTTONS (PHIR BUTTONS AAYENGE) -->
     <div class="grid-container">
       <a href="https://sites.google.com/view/shaheedmajorraviindersinghsand/home" class="btn-card" target="_blank">
         <span class="icon">🌐</span>
@@ -117,6 +117,7 @@
         <span class="title">Latest Notice</span>
       </a>
     </div>
+
   </div>
 
 </body>
