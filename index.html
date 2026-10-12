@@ -1,124 +1,441 @@
- <!DOCTYPE html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SMRISS GGSS School App</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', Roboto, sans-serif;
-      background-color: #f0f2f5;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
-    .app-container {
-      width: 100%;
-      max-width: 420px;
-      background: #ffffff;
-      min-height: 100vh;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-    }
-    .header-banner {
-      background: linear-gradient(135deg, #0d47a1, #1976d2);
-      color: white;
-      padding: 15px;
-      text-align: center;
-    }
-    .header-banner h1 {
-      font-size: 16px;
-      margin: 0 0 4px 0;
-    }
-    .header-banner p {
-      font-size: 11px;
-      margin: 0;
-      opacity: 0.9;
-    }
-    /* WIREFRAME FRAME ON TOP */
-    .wireframe-box {
-      width: 100%;
-      height: 480px;
-      border-bottom: 2px solid #e0e0e0;
-      background: #fafafa;
-    }
-    .wireframe-box iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    /* BUTTONS SECTION AT BOTTOM */
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      padding: 15px;
-      background: #ffffff;
-    }
-    .btn-card {
-      background: #ffffff;
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 12px 8px;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-    .btn-card .icon {
-      font-size: 22px;
-      display: block;
-      margin-bottom: 5px;
-    }
-    .btn-card .title {
-      font-size: 13px;
-      font-weight: 600;
-      color: #1a73e8;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMRISS GGSSS Bathinda - Welcome</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#0b1329] text-white flex justify-center items-center min-h-screen font-sans">
 
-  <div class="app-container">
-    
-    <!-- HEADER -->
-    <div class="header-banner">
-      <h1>SHAHEED MAJOR R.S. SANDHU</h1>
-      <p>Govt. Smart School • Mall Road, Bathinda</p>
+    <!-- Mobile Device Frame -->
+    <div class="w-[390px] h-[844px] bg-[#0b1329] rounded-[40px] shadow-2xl border-[8px] border-[#1e293b] flex flex-col justify-between p-6 relative overflow-hidden">
+        
+        <!-- Status Bar -->
+        <div class="flex justify-between items-center text-xs text-gray-400">
+            <span>09:41</span>
+            <div class="flex items-center space-x-1.5">
+                <span>5G</span>
+                <span>📶</span>
+                <span>🔋</span>
+            </div>
+        </div>
+
+        <!-- Main Content Center -->
+        <div class="flex flex-col items-center text-center my-auto space-y-4">
+            <!-- School Emblem / Logo -->
+            <div class="w-28 h-28 bg-white/10 rounded-full flex items-center justify-center p-2 shadow-inner border border-white/20">
+                <div class="w-full h-full bg-[#800020] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    🏛️
+                </div>
+            </div>
+
+            <!-- School Title -->
+            <div>
+                <h1 class="text-xl font-extrabold tracking-wide text-white">Shaheed Major Ravi Inder Singh Sandhu</h1>
+                <p class="text-sm text-yellow-400 font-medium mt-1">Govt Girls Sen Sec Smart School</p>
+                <p class="text-xs text-gray-300 mt-0.5 flex items-center justify-center gap-1">
+                    📍 Mall Road, Bathinda
+                </p>
+            </div>
+
+            <!-- Motto Badge -->
+            <div class="inline-block bg-yellow-500/20 border border-yellow-500 text-yellow-300 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                🏆 ENDEAVOR TO EXCEL
+            </div>
+
+            <p class="text-xs text-gray-400 max-w-[260px]">
+                Empowering Young Minds • Smart Education Portal
+            </p>
+        </div>
+
+        <!-- Footer Loading & Affiliate info -->
+        <div class="flex flex-col items-center space-y-3 pb-2">
+            <!-- Loading Indicator -->
+            <div class="w-full bg-gray-800 h-1.5 rounded-full overflow-hidden">
+                <div class="bg-yellow-500 h-full w-3/4 rounded-full animate-pulse"></div>
+            </div>
+            <span class="text-[11px] text-gray-400">Preparing smart learning environment...</span>
+
+            <!-- Affiliate Text -->
+            <div class="text-[10px] text-gray-500 text-center border-t border-gray-800 pt-2 w-full">
+                🔒 Affiliated to PSEB / Punjab Education Department
+            </div>
+        </div>
+
     </div>
 
-    <!-- 1. STITCH WIREFRAME (PEHLE WIREFRAME AAYEGA) -->
-    <div class="wireframe-box">
-      <iframe src="https://stitch.withgoogle.com/preview/17478538286794595047?node-id=335177f62cb64654a08262e6c84ec24e"></iframe>
+</body>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SMRISS GGSSS Bathinda Smart Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-800 flex justify-center items-center min-h-screen font-sans">
+
+    <!-- Mobile Device Frame -->
+    <div class="w-[390px] h-[844px] bg-slate-50 rounded-[40px] shadow-2xl border-[8px] border-slate-800 flex flex-col justify-between p-5 relative overflow-y-auto">
+        
+        <div>
+            <!-- Status Bar -->
+            <div class="flex justify-between items-center text-xs text-slate-500 mb-4">
+                <span>09:41</span>
+                <div class="flex items-center space-x-1.5">
+                    <span>5G</span>
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+
+            <!-- Header Section -->
+            <div class="flex flex-col items-center text-center mb-5">
+                <div class="w-14 h-14 bg-red-900 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-md mb-2 border border-red-800">
+                    🏛️
+                </div>
+                <h2 class="text-base font-extrabold text-slate-900 tracking-tight flex items-center gap-1">
+                    SMRISS GGSSS Bathinda <span class="text-xs text-blue-600">✔</span>
+                </h2>
+                <p class="text-xs text-slate-500 font-medium">Student & Parent Smart Portal</p>
+            </div>
+
+            <!-- Role Selector Tabs -->
+            <div class="grid grid-cols-2 gap-2 bg-slate-200/80 p-1 rounded-xl mb-5">
+                <button class="bg-slate-900 text-white text-xs font-semibold py-2 rounded-lg shadow-sm flex items-center justify-center gap-1.5">
+                    👤 Student / Parent
+                </button>
+                <button class="text-slate-600 text-xs font-semibold py-2 rounded-lg flex items-center justify-center gap-1.5 hover:bg-slate-300/50">
+                    🛡️ Staff / Faculty
+                </button>
+            </div>
+
+            <!-- Google Sign-In Button -->
+            <button class="w-full border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 text-xs font-semibold py-2.5 px-4 rounded-xl shadow-sm flex items-center justify-center gap-2 mb-4 transition">
+                <span class="text-base">🌐</span> Sign in with Gmail / Google
+            </button>
+
+            <!-- Divider -->
+            <div class="relative flex py-2 items-center mb-4">
+                <div class="flex-grow border-t border-slate-200"></div>
+                <span class="flex-shrink mx-3 text-[10px] uppercase tracking-wider text-slate-400 font-bold">Or Login with ID</span>
+                <div class="flex-grow border-t border-slate-200"></div>
+            </div>
+
+            <!-- Form Fields -->
+            <form class="space-y-3.5">
+                <!-- User ID Field -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="text-[11px] font-bold text-slate-700">User ID / Enrollment No. *</label>
+                        <span class="text-[10px] bg-blue-100 text-blue-700 font-semibold px-2 py-0.5 rounded-full">Learner Mode</span>
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="absolute left-3 text-slate-400 text-sm">👤</span>
+                        <input type="text" value="G-2024-8841" class="w-full bg-white border border-slate-300 rounded-xl py-2 pl-9 pr-3 text-xs text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                </div>
+
+                <!-- Password Field -->
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <label class="text-[11px] font-bold text-slate-700">Password *</label>
+                        <span class="text-[10px] text-slate-400">Case-sensitive</span>
+                    </div>
+                    <div class="relative flex items-center">
+                        <span class="absolute left-3 text-slate-400 text-sm">🔒</span>
+                        <input type="password" value="••••••••" class="w-full bg-white border border-slate-300 rounded-xl py-2 pl-9 pr-9 text-xs text-slate-800 font-medium focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <span class="absolute right-3 text-slate-400 text-xs cursor-pointer">👁️</span>
+                    </div>
+                </div>
+
+                <!-- Remember Me & Forgot Password -->
+                <div class="flex items-center justify-between text-xs pt-1">
+                    <label class="flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" checked class="rounded border-slate-300 text-blue-600 focus:ring-blue-500 w-3.5 h-3.5">
+                        <span class="text-[11px] text-slate-600 font-medium">Remember me</span>
+                    </label>
+                    <a href="#" class="text-[11px] text-blue-600 font-semibold hover:underline">Forgot Password?</a>
+                </div>
+
+                <!-- Login Button -->
+                <button type="button" class="w-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold py-3 rounded-xl shadow-md flex items-center justify-center gap-2 transition mt-2">
+                    Login to Portal →
+                </button>
+            </form>
+
+            <!-- Help Footer Card -->
+            <div class="mt-4 bg-slate-100/80 border border-slate-200/80 rounded-xl p-3 flex items-center justify-between">
+                <div class="flex items-center gap-2.5">
+                    <span class="text-base">🎧</span>
+                    <div>
+                        <p class="text-[10px] font-bold text-slate-700">Need admission or login help?</p>
+                        <p class="text-[9px] text-slate-500">Helpline 0164-221234 or Admin Office</p>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <button class="w-7 h-7 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">📞</button>
+                    <button class="w-7 h-7 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">✉️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Affiliate & Language Bar -->
+        <div class="pt-3 border-t border-slate-200 flex items-center justify-between text-[10px] text-slate-500">
+            <span class="flex items-center gap-1 font-medium">🏆 PSEB Smart School Affiliate</span>
+            <div class="flex gap-1.5 font-semibold">
+                <span class="bg-slate-200 text-slate-800 px-2 py-0.5 rounded cursor-pointer">English</span>
+                <span class="hover:bg-slate-200 px-2 py-0.5 rounded cursor-pointer text-slate-600">ਪੰਜਾਬੀ</span>
+            </div>
+        </div>
+
     </div>
 
-    <!-- 2. APP BUTTONS (PHIR BUTTONS AAYENGE) -->
-    <div class="grid-container">
-      <a href="https://sites.google.com/view/shaheedmajorraviindersinghsand/home" class="btn-card" target="_blank">
-        <span class="icon">🌐</span>
-        <span class="title">School Website</span>
-      </a>
+</body>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Hub - SMRISS GGSSS Bathinda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-800 flex justify-center items-center min-h-screen font-sans">
 
-      <a href="https://www.pseb.ac.in/books?catid=3" class="btn-card" target="_blank">
-        <span class="icon">📚</span>
-        <span class="title">PSEB Syllabus</span>
-      </a>
+    <!-- Mobile Device Frame -->
+    <div class="w-[390px] h-[844px] bg-slate-50 rounded-[40px] shadow-2xl border-[8px] border-slate-800 flex flex-col justify-between relative overflow-hidden">
+        
+        <!-- Scrollable Main Content -->
+        <div class="flex-1 overflow-y-auto p-4 space-y-4">
+            
+            <!-- Status Bar -->
+            <div class="flex justify-between items-center text-xs text-slate-500 mb-1">
+                <span>09:41</span>
+                <div class="flex items-center space-x-1.5">
+                    <span>5G</span>
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
 
-      <a href="https://docs.google.com/spreadsheets/d/1abuFliE2_pCgSKHB_HUQEvHSAvRTfX33h5k9_onDiAA/edit?usp=sharing" class="btn-card" target="_blank">
-        <span class="icon">📅</span>
-        <span class="title">Time Table</span>
-      </a>
+            <!-- Top Header -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <div class="flex items-center gap-2">
+                    <button class="w-8 h-8 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">←</button>
+                    <div>
+                        <h2 class="text-sm font-extrabold text-slate-900">Activities & Clubs Hub</h2>
+                        <p class="text-[10px] text-slate-500">SMRISS GGSSS Mall Road Bathinda</p>
+                    </div>
+                </div>
+                <span class="bg-purple-100 text-purple-700 text-[10px] font-bold px-2 py-1 rounded-full">🏆 Active</span>
+            </div>
 
-      <a href="https://docs.google.com/document/d/1Xl2OLmhVYVTWOzIjISUMj6vMDlduUc0oNvg73fuJBfA/edit?tab=t.0" class="btn-card" target="_blank">
-        <span class="icon">💬</span>
-        <span class="title">Latest Notice</span>
-      </a>
+            <!-- Featured Banner -->
+            <div class="relative bg-gradient-to-r from-purple-900 to-slate-900 rounded-2xl overflow-hidden shadow-md text-white p-4 flex flex-col justify-end h-32">
+                <div class="relative z-10 space-y-1">
+                    <span class="bg-amber-400 text-slate-900 text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">Annual Fest 2026</span>
+                    <h3 class="text-xs font-extrabold text-white">District Science & Cultural Exhibition</h3>
+                    <p class="text-[10px] text-slate-300">Registrations open for Robotics, Eco-Club, and Folk Dance teams.</p>
+                </div>
+            </div>
+
+            <!-- Categories / Filter Pills -->
+            <div class="flex gap-2 overflow-x-auto pb-1 text-xs">
+                <button class="bg-slate-900 text-white font-semibold px-3 py-1.5 rounded-xl whitespace-nowrap shadow-sm">All Clubs</button>
+                <button class="bg-white border border-slate-200 text-slate-600 font-semibold px-3 py-1.5 rounded-xl whitespace-nowrap shadow-sm">🔬 BIS & Science</button>
+                <button class="bg-white border border-slate-200 text-slate-600 font-semibold px-3 py-1.5 rounded-xl whitespace-nowrap shadow-sm">🌱 Eco Club</button>
+                <button class="bg-white border border-slate-200 text-slate-600 font-semibold px-3 py-1.5 rounded-xl whitespace-nowrap shadow-sm">🏅 Sports</button>
+            </div>
+
+            <!-- Activities Grid / Cards -->
+            <div class="space-y-3">
+                
+                <!-- Card 1 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-base shadow-inner">
+                            🔬
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">BIS Standards Science Club</h4>
+                            <p class="text-[10px] text-slate-500">Quality research & lab inquiry</p>
+                            <span class="inline-block mt-1 text-[9px] bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded">Meets Weekly (Sat)</span>
+                        </div>
+                    </div>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-200">View →</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-base shadow-inner">
+                            🌱
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Eco-Club & Green Campus</h4>
+                            <p class="text-[10px] text-slate-500">Tree plantation & cleanliness drives</p>
+                            <span class="inline-block mt-1 text-[9px] bg-emerald-50 text-emerald-700 font-semibold px-2 py-0.5 rounded">Active Campaign</span>
+                        </div>
+                    </div>
+                    <button class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-[11px] font-semibold px-3 py-1.5 rounded-lg border border-slate-200">Join →</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center font-bold text-base shadow-inner">
+                            🏅
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-900">Athletics & Sports Arena</h4>
+                            <p class="text-[10px] text-slate-500">Kho-Kho, Badminton & Yoga</p>
+                            <span class="inline-block mt-1 text-[9px] bg-amber-50 text-amber- </div>
+        </div>
+
     </div>
 
-  </div>
+</body>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institutional Profile - SMRISS GGSSS Bathinda</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-800 flex justify-center items-center min-h-screen font-sans">
+
+    <!-- Mobile Device Frame -->
+    <div class="w-[390px] h-[844px] bg-slate-50 rounded-[40px] shadow-2xl border-[8px] border-slate-800 flex flex-col justify-between relative overflow-hidden">
+        
+        <!-- Scrollable Main Content -->
+        <div class="flex-1 overflow-y-auto p-4 space-y-4">
+            
+            <!-- Status Bar -->
+            <div class="flex justify-between items-center text-xs text-slate-500 mb-1">
+                <span>09:41</span>
+                <div class="flex items-center space-x-1.5">
+                    <span>5G</span>
+                    <span>📶</span>
+                    <span>🔋</span>
+                </div>
+            </div>
+
+            <!-- Top Header -->
+            <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                <div class="flex items-center gap-2">
+                    <button class="w-8 h-8 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">←</button>
+                    <div>
+                        <h2 class="text-sm font-extrabold text-slate-900">Institutional Profile</h2>
+                        <p class="text-[10px] text-slate-500">SMRISS GGSSS Mall Road</p>
+                    </div>
+                </div>
+                <div class="flex gap-1.5">
+                    <button class="w-8 h-8 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">🔗</button>
+                    <button class="w-8 h-8 bg-white border border-slate-200 rounded-full flex items-center justify-center text-xs shadow-sm">🔔</button>
+                </div>
+            </div>
+
+            <!-- School Hero Card -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm text-center space-y-3">
+                <div class="w-16 h-16 bg-red-900 mx-auto rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md border-2 border-red-800">
+                    🏛️
+                </div>
+                <div>
+                    <span class="bg-amber-100 text-amber-800 text-[9px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider">ESTD 1954</span>
+                    <h3 class="text-base font-extrabold text-slate-900 mt-1">Shaheed Major Ravi Inder Singh Sandhu</h3>
+                    <p class="text-xs text-slate-600 font-medium">Govt. Girls Sen. Sec. Smart School</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">📍 Mall Road, Bathinda, Punjab</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-4 gap-1 pt-2 border-t border-slate-100 text-center">
+                    <div class="bg-slate-50 p-2 rounded-xl">
+                        <p class="text-xs font-extrabold text-slate-900">2,500+</p>
+                        <p class="text-[9px] text-slate-500">Students</p>
+                    </div>
+                    <div class="bg-slate-50 p-2 rounded-xl">
+                        <p class="text-xs font-extrabold text-slate-900">85+</p>
+                        <p class="text-[9px] text-slate-500">Faculty</p>
+                    </div>
+                    <div class="bg-slate-50 p-2 rounded-xl">
+                        <p class="text-xs font-extrabold text-emerald-600">100%</p>
+                        <p class="text-[9px] text-slate-500">Pass Rate</p>
+                    </div>
+                    <div class="bg-slate-50 p-2 rounded-xl">
+                        <p class="text-xs font-extrabold text-blue-600">#1</p>
+                        <p class="text-[9px] text-slate-500">District Rank</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Principal Desk Section -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center text-white font-bold text-sm shadow">
+                        KS
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-extrabold text-slate-900">S. Kulwinder Singh Sandhu</h4>
+                        <span class="text-[9px] bg-red-100 text-red-800 font-bold px-2 py-0.5 rounded">State Awardee</span>
+                        <p class="text-[10px] text-slate-500">Principal & Head of Institution</p>
+                    </div>
+                </div>
+                <p class="text-[11px] text-slate-600 leading-relaxed italic border-l-2 border-red-900 pl-3">
+                    "Under his brilliant leadership, the school campus has transformed into a highly disciplined, positive, and vibrant space where education thrives effortlessly for every single student."
+                </p>
+                <a href="mailto:contact.principal@smriss.edu" class="text-[10px] text-blue-600 font-semibold flex items-center gap-1">✉️ contact.principal@smriss.edu</a>
+            </div>
+
+            <!-- Accreditations & Recognitions -->
+            <div>
+                <h4 class="text-xs font-extrabold text-slate-900 uppercase tracking-wider mb-2">Accreditations & Recognitions</h4>
+                <div class="space-y-2">
+                    <div class="bg-white border border-slate-200 rounded-xl p-3 flex items-start gap-3 shadow-sm">
+                        <span class="text-amber-500 text-lg">⭐</span>
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-900">Punjab Smart School Mission Gold Rating</h5>
+                            <p class="text-[10px] text-slate-500">Recognized for stellar digital classroom infrastructure and teacher training.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white border border-slate-200 rounded-xl p-3 flex items-start gap-3 shadow-sm">
+                        <span class="text-emerald-600 text-lg">🛡️</span>
+                        <div>
+                            <h5 class="text-xs font-bold text-slate-900">Bureau of Indian Standards (BIS) Standards Club</h5>
+                            <p class="text-[10px] text-slate-500">Fostering scientific quality awareness, ethics, and youth lab research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bg-white border-t border-slate-200 px-6 py-2.5 flex justify-between items-center text-center shadow-inner">
+            <div class="flex flex-col items-center text-slate-400 hover:text-slate-700 cursor-pointer">
+                <span class="text-base">🏠</span>
+                <span class="text-[10px] font-medium">Home</span>
+            </div>
+            <div class="flex flex-col items-center text-slate-400 hover:text-slate-700 cursor-pointer">
+                <span class="text-base">🔔</span>
+                <span class="text-[10px] font-medium">Notices</span>
+            </div>
+            <div class="flex flex-col items-center text-slate-400 hover:text-slate-700 cursor-pointer">
+                <span class="text-base">🎯</span>
+                <span class="text-[10px] font-medium">Activities</span>
+            </div>
+            <div class="flex flex-col items-center text-purple-700 cursor-pointer">
+                <span class="text-base">👤</span>
+                <span class="text-[10px] font-bold">Profile</span>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 </html>
